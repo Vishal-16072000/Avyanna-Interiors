@@ -1,10 +1,12 @@
+import logo from '../assets/logo.png'
+
 function Header({ navItems }) {
   return (
     <header className="sticky top-0 z-40 border-b border-zinc-200/80 bg-white/90 backdrop-blur-lg">
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-4">
         <a href="#home" className="text-lg font-semibold tracking-wide text-zinc-900 sm:text-xl">
           {/* AVYANNA <span className="text-amber-600">INTERIORS</span> */}
-          <img src="./src/assets/logo.png" alt="Avyanna Interiors" className="h-18 w-30" />
+          <img src={logo} alt="Avyanna Interiors" className="h-18 w-30" />
         </a>
         <nav className="hidden items-center gap-8 text-sm text-zinc-600 md:flex">
           {navItems.map((item) => (
