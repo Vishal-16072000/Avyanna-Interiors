@@ -36,7 +36,7 @@ function App() {
       <div className="min-h-screen bg-zinc-50 text-zinc-900">
         <Header navItems={navItems} />
         <main>
-          <Hero stats={stats} />
+          <Hero stats={stats} startAnimation={!showWelcome} />
           <MediaShowcase media={showcaseMedia} />
           <Services services={services} />
           <Portfolio items={portfolioItems} />
