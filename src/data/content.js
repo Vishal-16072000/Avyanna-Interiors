@@ -75,9 +75,9 @@ export const testimonials = [
 ]
 
 export const showcaseMedia = {
-  video: 
+  video: 'https://youtu.be/HA9glD0QN0g?si=Pwq_y6KkVs_rExHC',
   // showcaseVideo,
-  'https://cdn.coverr.co/videos/coverr-spacious-living-room-1575/1080p.mp4',
+  // 'https://cdn.coverr.co/videos/coverr-spacious-living-room-1575/1080p.mp4',
   // 'https://i.pinimg.com/originals/1f/64/7e/1f647e78cf47c93c9dafbab381588d0a.gif',
   images: [
     'https://images.unsplash.com/photo-1616594039964-3f2b5361f9f6?auto=format&fit=crop&w=1200&q=80',
