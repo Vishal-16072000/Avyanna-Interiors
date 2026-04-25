@@ -35,7 +35,7 @@ function MediaShowcase({ media }) {
     if (youtubeEmbedUrl) {
       const wrapperClass =
         mobile && isYoutubeShorts(source)
-          ? 'aspect-[9/16] w-full max-w-sm mx-auto bg-black'
+          ? 'aspect-[9/16] w-full bg-black'
           : 'aspect-video w-full bg-black'
 
       return (
@@ -66,9 +66,10 @@ function MediaShowcase({ media }) {
   }
 
   return (
-    <section className="mx-auto w-full max-w-7xl px-6 py-20">
+    <section className="mx-auto -mt-10 w-full max-w-7xl px-0 pb-8 pt-0 md:mt-0 md:px-6 md:py-20">
       <div className="">
-        <article className="overflow-hidden rounded-3xl border border-zinc-200 bg-white shadow-sm lg:col-span-2">
+        <div className="-mb-16 h-16 w-full bg-linear-to-b from-zinc-50 via-zinc-50/90 to-transparent md:hidden" />
+        <article className="overflow-hidden bg-white shadow-sm md:rounded-3xl md:border md:border-zinc-200 lg:col-span-2">
           <div className="md:hidden">{renderMedia(media.mobileVideo || media.video, { mobile: true })}</div>
           <div className="hidden md:block">{renderMedia(media.video)}</div>
         </article>

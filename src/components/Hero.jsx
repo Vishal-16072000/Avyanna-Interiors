@@ -60,7 +60,7 @@ function Hero({ stats, startAnimation }) {
   return (
     <section id="home" className="relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_10%_15%,rgba(217,119,6,0.16),transparent_38%),radial-gradient(circle_at_88%_10%,rgba(15,23,42,0.08),transparent_34%)]" />
-      <div className="relative mx-auto grid w-full max-w-7xl gap-12 px-6 pb-24 pt-20 md:grid-cols-2 md:items-center">
+      <div className="relative mx-auto grid w-full max-w-7xl gap-12 px-6 pb-6 pt-20 md:pb-24 md:grid-cols-2 md:items-center">
         <div>
           <p className="mb-4 inline-flex rounded-full border border-zinc-200 px-4 py-1 text-xs uppercase tracking-[0.18em] text-zinc-500">
             Luxury. Functionality. Personality.
@@ -81,9 +81,14 @@ function Hero({ stats, startAnimation }) {
             </button>
           </div>
         </div>
-        <div className="grid gap-4 sm:grid-cols-3">
-          {stats.map((stat) => (
-            <div key={stat.label} className="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm">
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
+          {stats.map((stat, index) => (
+            <div
+              key={stat.label}
+              className={`rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm ${
+                index === 2 ? 'col-span-2 text-center sm:col-span-1 sm:text-left' : ''
+              }`}
+            >
               <p className="text-sm text-zinc-500">{stat.label}</p>
               <p className="mt-2 text-3xl font-semibold text-zinc-900">
                 <AnimatedValue value={stat.value} startAnimation={startAnimation} />
