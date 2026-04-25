@@ -72,11 +72,11 @@ function Hero({ stats, startAnimation }) {
             Avyanna Interiors creates refined spaces for modern homes and work environments with
             thoughtful design and detail-led execution.
           </p>
-          <div className="mt-8 flex flex-wrap gap-4">
-            <button className="rounded-full bg-zinc-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-zinc-700">
+          <div className="mt-8 flex items-center gap-2 sm:gap-4">
+            <button className="rounded-full bg-zinc-900 px-4 py-2 text-xs font-semibold text-white transition hover:bg-zinc-700 sm:px-6 sm:py-3 sm:text-sm">
               Start Your Project
             </button>
-            <button className="rounded-full border border-zinc-300 bg-white px-6 py-3 text-sm font-semibold text-zinc-800 transition hover:border-zinc-500">
+            <button className="rounded-full border border-zinc-300 bg-white px-4 py-2 text-xs font-semibold text-zinc-800 transition hover:border-zinc-500 sm:px-6 sm:py-3 sm:text-sm">
               View Portfolio
             </button>
           </div>
